@@ -1,12 +1,8 @@
-const express = require("express")
-const app = express()
+const app = require("./src/app")
 
-app.get("/", (req, res) => {
-    res.send("Hello World")
+
+
+
+app.listen(3000, () => {
+    console.log("Server is running on port 3000")
 })
-app.get("/about", (req, res) => {
-    res.send("About")
-})
-
-
-app.listen(3000)
